@@ -1,0 +1,110 @@
+
+$ pwd
+/Users/mac/desktop/kitchen
+mac ~/desktop/kitchen
+$ rm cans.txt
+cans.txt
+mac ~/desktop/kitchen
+$ mv trashcan/ ..
+mv: rename trashcan/ to ../trashcan/: No such file or directory
+mac ~/desktop/kitchen
+$ cd fridge
+mac ~/desktop/kitchen/fridge
+$ mv trashcan/ ..
+trashcan/ -> ../trashcan/
+mac ~/desktop/kitchen/fridge
+$ cd trashcan
+-bash: cd: trashcan: No such file or directory
+mac ~/desktop/kitchen/fridge
+$ cd ..
+mac ~/desktop/kitchen
+$ ls
+fridge/		pantry/		trashcan/
+mac ~/desktop/kitchen
+$ cd trashcan
+mac ~/desktop/kitchen/trashcan
+$ ls
+banana-peels.txt	chicken-bones.txt	egg-shells.txt		sink/
+mac ~/desktop/kitchen/trashcan
+$ mv sink/ ..
+sink/ -> ../sink/
+mac ~/desktop/kitchen/trashcan
+$ cd ..
+mac ~/desktop/kitchen
+$ ls
+fridge/		pantry/		sink/		trashcan/
+mac ~/desktop/kitchen
+$ mv /Users/mac/desktop/kitchen/pantry/crisper-drawer /Users/mac/desktop/kitchen/fridge
+/Users/mac/desktop/kitchen/pantry/crisper-drawer -> /Users/mac/desktop/kitchen/fridge/crisper-drawer
+mac ~/desktop/kitchen
+$ ls
+fridge/		pantry/		sink/		trashcan/
+mac ~/desktop/kitchen
+$ cd fridge
+mac ~/desktop/kitchen/fridge
+$ ls
+crisper-drawer/	diapers.txt	freezer/	milk.txt
+mac ~/desktop/kitchen/fridge
+$ rm diapers.txt
+diapers.txt
+mac ~/desktop/kitchen/fridge
+$ touch apples.txt
+mac ~/desktop/kitchen/fridge
+$ ls
+apples.txt	crisper-drawer/	freezer/	milk.txt
+mac ~/desktop/kitchen/fridge
+$ cd ..
+mac ~/desktop/kitchen
+$ ls
+fridge/		pantry/		sink/		trashcan/
+mac ~/desktop/kitchen
+$ cd fridge
+mac ~/desktop/kitchen/fridge
+$ cd freezer
+mac ~/desktop/kitchen/fridge/freezer
+$ ls
+couch.txt	frozenpeas.txt	icecream.txt
+mac ~/desktop/kitchen/fridge/freezer
+$ rm couch.txt
+couch.txt
+mac ~/desktop/kitchen/fridge/freezer
+$ cd ..
+mac ~/desktop/kitchen/fridge
+$ cd ..
+mac ~/desktop/kitchen
+$ cd pantry
+mac ~/desktop/kitchen/pantry
+$ ls
+cans.txt	cereal.txt
+mac ~/desktop/kitchen/pantry
+$ cd ..
+mac ~/desktop/kitchen
+$ cd sink
+mac ~/desktop/kitchen/sink
+$ ls
+clean-dishes.txt	delete-me.txt		dirty-dishes.txt
+mac ~/desktop/kitchen/sink
+$ rm delete-me.txt drying-rack.txt
+delete-me.txt
+rm: drying-rack.txt: No such file or directory
+mac ~/desktop/kitchen/sink
+$ ls
+clean-dishes.txt	dirty-dishes.txt
+mac ~/desktop/kitchen/sink
+$ rm dirty-dishes.txt
+dirty-dishes.txt
+mac ~/desktop/kitchen/sink
+$ ls
+clean-dishes.txt
+mac ~/desktop/kitchen/sink
+$ mkdir drying-rack
+mac ~/desktop/kitchen/sink
+$ ls
+clean-dishes.txt	drying-rack/
+mac ~/desktop/kitchen/sink
+$ cd drying-rack
+mac ~/desktop/kitchen/sink/drying-rack
+$ touch dirty-dishes.txt
+mac ~/desktop/kitchen/sink/drying-rack
+$ 
+
