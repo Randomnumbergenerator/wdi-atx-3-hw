@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>magic8ball</title>
 </head>
 <body>
 
 <!-- magic 8 ball view -->
+<%= yield %>
+
+<ul>
+	<% @magic8ball.each do |ball| %>
+		<li><%= ball %></li>
+		
+	<% end %>
+</ul>
 
 </body>
 </html>
+

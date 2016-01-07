@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>coin_toss</title>
 </head>
 <body>
 
 <!-- coin toss view -->
+<%= yield %>
+
+<div>
+	<% @coin_toss.each do |coin| %>
+		<div><%= coin %></div>
+		
+	<% end %>
+</div>
+
 
 </body>
 </html>
